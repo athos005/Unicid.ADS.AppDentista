@@ -6,7 +6,7 @@ Desenvolvimento de um aplicativo para Android para auxiliar dentistas no gerenci
 
 ## User stories
 
-1. User Stories - Cadastro
+### 1. User Stories - Cadastro
 
 Funcionalidade: Cadastro
 Como Dentista,
@@ -17,7 +17,7 @@ Critérios de aceitação:
 - Possibilidade de cadastrar por Nome, CPF,RG com demais dados tais como:
 - Data de Nascimento, sexo, idade, eemail, telefone e endereço.
 
-2. User Stories - Agendamento
+### 2. User Stories - Agendamento
 
 Funcionalidade: Pesquisa de agendamentos
 Como um Dentista,
@@ -29,8 +29,7 @@ Critérios de aceitação:
 - Possibilidade de visualizar as consultas por horário, dia, mês e ano.
 - Possibilidade de vizualizar o procedimento.
 
-
-3. User Stories - Prontuario
+### 3. User Stories - Prontuario
 
 Funcionalidade: Visualizar Prontuário
 Como um Dentista da clínica,
