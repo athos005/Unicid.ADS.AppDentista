@@ -1,10 +1,10 @@
 # Unicid.ADS.AppDentista
 
-##Objetivo
+## Objetivo
 
 Desenvolvimento de um aplicativo para Android para auxiliar dentistas no gerenciamento da sua agenda e pacientes.
 
-##User stories
+## User stories
 
 User Stories - Cadastro
 
