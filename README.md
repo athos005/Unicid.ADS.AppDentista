@@ -42,3 +42,9 @@ Critérios de aceitação:
 - Possibilidade de anotar o desenvolvimento dos procedimentos.
 - Possibilidade de editar as anotações dos procedimentos.
 
+### Wireframes (Baixa Fidelidade)
+
+![Login](https://user-images.githubusercontent.com/62043145/93653953-9de9c800-f9f1-11ea-9d8d-0f94e39874cf.png)
+
+![Cadastro Usuário](https://user-images.githubusercontent.com/62043145/93653960-a80bc680-f9f1-11ea-8193-05e08eaf842f.png)
+
