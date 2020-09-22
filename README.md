@@ -1,4 +1,4 @@
-# Unicid.ADS.AppDentista
+# Aplicativo Dentista
 
 ## Objetivo
 
