@@ -42,11 +42,11 @@ Critérios de aceitação:
 - Possibilidade de anotar o desenvolvimento dos procedimentos.
 - Possibilidade de editar as anotações dos procedimentos.
 
-### DER (Banco de Dados)
+## DER (Banco de Dados)
 
 ![DER](https://i.imgur.com/yzBsDOD.png)
 
-### Wireframes
+## Wireframes
 
 - [Wireframe](https://www.figma.com/file/xPoJfrisuBUflwWP3qXDtq/App-Clinica-Odontol%C3%B3gica?node-id=0%3A1)
 
