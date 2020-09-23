@@ -42,10 +42,15 @@ Critérios de aceitação:
 - Possibilidade de anotar o desenvolvimento dos procedimentos.
 - Possibilidade de editar as anotações dos procedimentos.
 
-### Wireframes (Baixa Fidelidade)
+### DER (Banco de Dados)
+
+![DER](https://i.imgur.com/yzBsDOD.png)
+
+### Wireframes
 
 - [Wireframe](https://www.figma.com/file/xPoJfrisuBUflwWP3qXDtq/App-Clinica-Odontol%C3%B3gica?node-id=0%3A1)
 
 - [Protótipo](https://www.figma.com/proto/xPoJfrisuBUflwWP3qXDtq/App-Clinica-Odontol%C3%B3gica?node-id=106%3A117&scaling=scale-down)
+
 
 
