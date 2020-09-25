@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".ui.activity.Agenda"
+            android:name=".ui.activity.AgendaActivity"
             android:label="@string/title_activity_agenda"
             android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
@@ -20,23 +20,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".ui.activity.LoginUsuarioAcitivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".ui.activity.NovoUsuarioAcitivity" >
+
             <intent-filter>
+
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".ui.activity.AcitivityLoginUsuario" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-        <activity
-            android:name=".ui.activity.LoginUsuario.main"
-            tools:ignore="MissingClass" />
 
         <meta-data
             android:name="preloaded_fonts"
