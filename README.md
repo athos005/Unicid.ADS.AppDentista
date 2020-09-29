@@ -51,6 +51,7 @@ Critérios de aceitação:
 - [Wireframe](https://www.figma.com/file/xPoJfrisuBUflwWP3qXDtq/App-Clinica-Odontol%C3%B3gica?node-id=0%3A1)
 
 - [Protótipo](https://www.figma.com/proto/xPoJfrisuBUflwWP3qXDtq/App-Clinica-Odontol%C3%B3gica?node-id=106%3A117&scaling=scale-down)
+Eduardo Gordo pra caralho
 
 
 
