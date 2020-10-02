@@ -40,7 +40,15 @@ class NovoUsuarioAcitivity : AppCompatActivity() {
         database = NovoUsuarioDatabase(this)
 
         btnCadastroUsuarioConfirmar.setOnClickListener {
-            salvarUsuario()
+            if(txtCadastroUsuarioNome.text.toString().isEmpty() || txtCadastroUsuarioCPF.text.toString().isEmpty() ||
+                    txtCadastroUsuarioEmail.text.toString().isEmpty() || txtCadastroUsuarioCelular.text.toString().isEmpty()
+                || txtCadastroUsuarioSenha.text.toString().isEmpty()){
+                Toast.makeText(this,"Preencha Todos os Campos ", Toast.LENGTH_SHORT).show()
+            }else if (!txtCadastroUsuarioSenha.text.toString().equals(txtCadastroUsuarioConfirmaSenha.text.toString())){
+                Toast.makeText(this,"Senhas Diferentes!", Toast.LENGTH_SHORT).show()
+            }else {
+                salvarUsuario()
+            }
         }
     }
 
