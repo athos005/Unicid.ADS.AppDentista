@@ -1,7 +1,7 @@
-package database
+package br.com.unicid.aplicativodentista.database
 
 import android.content.ContentValues
-import br.com.unicid.aplicativodentista.ui.activity.Usuario
+import br.com.unicid.aplicativodentista.model.Usuario
 
 fun NovoUsuarioDatabase.inserirUsuario (item : Usuario): Long {
 

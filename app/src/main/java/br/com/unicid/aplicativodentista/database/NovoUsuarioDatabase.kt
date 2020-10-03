@@ -1,4 +1,4 @@
-package database
+package br.com.unicid.aplicativodentista.database
 
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase

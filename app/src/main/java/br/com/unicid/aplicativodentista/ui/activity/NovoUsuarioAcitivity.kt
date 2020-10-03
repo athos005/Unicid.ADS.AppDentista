@@ -6,8 +6,9 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import br.com.unicid.aplicativodentista.R
-import database.NovoUsuarioDatabase
-import database.inserirUsuario
+import br.com.unicid.aplicativodentista.database.NovoUsuarioDatabase
+import br.com.unicid.aplicativodentista.database.inserirUsuario
+import br.com.unicid.aplicativodentista.model.Usuario
 
 class NovoUsuarioAcitivity : AppCompatActivity() {
 

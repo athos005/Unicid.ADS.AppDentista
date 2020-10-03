@@ -1,4 +1,4 @@
-package br.com.unicid.aplicativodentista.ui.activity
+package br.com.unicid.aplicativodentista.model
 
 data class Usuario (
 
