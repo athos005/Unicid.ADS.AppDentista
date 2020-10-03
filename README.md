@@ -46,7 +46,8 @@ Critérios de aceitação:
 
 ![SQLite](https://i.imgur.com/FMVjWAR.png)
 
-- [Editar : Banco de Dados](https://lucid.app/invitations/accept/3fb8def2-84ba-4a3a-8297-51e643b2d18c)
+- [Editar : Diagrama](https://lucid.app/invitations/accept/3fb8def2-84ba-4a3a-8297-51e643b2d18c)
+- [Editar : SQLite](https://codeshare.io/2Bowed)
 
 ## Wireframes
 
