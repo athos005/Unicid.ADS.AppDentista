@@ -42,9 +42,11 @@ Critérios de aceitação:
 - Possibilidade de anotar o desenvolvimento dos procedimentos.
 - Possibilidade de editar as anotações dos procedimentos.
 
-## DER (Banco de Dados)
+## SQLite (Banco de Dados)
 
-![DER](https://i.imgur.com/yzBsDOD.png)
+![SQLite](https://i.imgur.com/FMVjWAR.png)
+
+- [Editar : Banco de Dados](https://lucid.app/invitations/accept/3fb8def2-84ba-4a3a-8297-51e643b2d18c)
 
 ## Wireframes
 
