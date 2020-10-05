@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-tools:context=".ui.activity.DadosPacienteActivity">
-
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.UsuarioAcitivity">
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginTop="16dp"
             android:background="@drawable/custon_background"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -20,18 +18,22 @@ tools:context=".ui.activity.DadosPacienteActivity">
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/textView3"
+    <Button
+        android:id="@+id/btnCadastrarUsuario"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="64sp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/roboto_medium"
-        android:text="Nome"
-        android:textColor="#147DC7"
-        android:textSize="16sp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Cadastrar"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuarioConfirmaSenha" />
 
         <EditText
             android:id="@+id/txtUsuarioNome"
@@ -124,64 +126,6 @@ tools:context=".ui.activity.DadosPacienteActivity">
             app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
         <TextView
-            android:id="@+id/textView10"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:fontFamily="@font/roboto_medium"
-            android:text="Celular"
-            android:textColor="#147DC7"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtUsuarioEmail" />
-
-        <EditText
-            android:id="@+id/txtCadastroUsuarioCelular"
-            android:layout_width="0dp"
-            android:layout_height="38dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/custom_textbox"
-            android:ems="10"
-            android:inputType="text|phone"
-            android:selectAllOnFocus="true"
-            android:singleLine="true"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:textColorLink="#2196F3"
-            app:layout_constraintEnd_toEndOf="@+id/txtUsuarioEmail"
-            app:layout_constraintStart_toStartOf="@+id/textView10"
-            app:layout_constraintTop_toBottomOf="@+id/textView10" />
-
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:fontFamily="@font/roboto_medium"
-            android:text="Telefone"
-            android:textColor="#147DC7"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtCadastroUsuarioCelular" />
-
-        <EditText
-            android:id="@+id/txtCadastroUsuarioTelefone"
-            android:layout_width="0dp"
-            android:layout_height="38dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/custom_textbox"
-            android:ems="10"
-            android:inputType="text|phone"
-            android:selectAllOnFocus="true"
-            android:singleLine="true"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:textColorLink="#2196F3"
-            app:layout_constraintEnd_toEndOf="@+id/txtCadastroUsuarioCelular"
-            app:layout_constraintStart_toStartOf="@+id/textView11"
-            app:layout_constraintTop_toBottomOf="@+id/textView11" />
-
-        <TextView
             android:id="@+id/textView12"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -192,13 +136,14 @@ tools:context=".ui.activity.DadosPacienteActivity">
             android:textColor="#147DC7"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtCadastroUsuarioTelefone" />
+            app:layout_constraintTop_toBottomOf="@+id/txtUsuarioEmail" />
 
         <EditText
             android:id="@+id/txtUsuarioSenha"
             android:layout_width="0dp"
             android:layout_height="38dp"
             android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
             android:background="@drawable/custom_textbox"
             android:ems="10"
             android:inputType="textPassword"
@@ -206,7 +151,7 @@ tools:context=".ui.activity.DadosPacienteActivity">
             android:singleLine="true"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textColorLink="#2196F3"
-            app:layout_constraintEnd_toEndOf="@+id/txtCadastroUsuarioTelefone"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/textView12"
             app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
@@ -228,6 +173,7 @@ tools:context=".ui.activity.DadosPacienteActivity">
             android:layout_width="0dp"
             android:layout_height="38dp"
             android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
             android:background="@drawable/custom_textbox"
             android:ems="10"
             android:inputType="textPassword"
@@ -235,7 +181,7 @@ tools:context=".ui.activity.DadosPacienteActivity">
             android:singleLine="true"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textColorLink="#2196F3"
-            app:layout_constraintEnd_toEndOf="@+id/txtUsuarioSenha"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/textView13"
             app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
@@ -252,6 +198,17 @@ tools:context=".ui.activity.DadosPacienteActivity">
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtUsuarioCro" />
 
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Nome"
+            android:textColor="#147DC7"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
-
-</android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>

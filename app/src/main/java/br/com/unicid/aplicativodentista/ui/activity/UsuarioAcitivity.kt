@@ -2,6 +2,7 @@ package br.com.unicid.aplicativodentista.ui.activity
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+<<<<<<< HEAD
 import android.widget.Toast
 import br.com.unicid.aplicativodentista.R
 import br.com.unicid.aplicativodentista.model.Usuario
@@ -25,6 +26,16 @@ class UsuarioAcitivity : AppCompatActivity() {
                 senhaUsuario = txtUsuarioSenha.text.toString()
             )
         }
+=======
+import br.com.unicid.aplicativodentista.R
+import br.com.unicid.aplicativodentista.database.UsuarioDAO
+import br.com.unicid.aplicativodentista.model.Usuario
+import kotlinx.android.synthetic.main.activity_usuario.*
+
+class UsuarioAcitivity : AppCompatActivity() {
+
+    var daoUsuario: UsuarioDAO? = null
+>>>>>>> 140e0fcb6046cc06c7ed06ec91d3444f8db41d51
 
 //    private lateinit var txtCadastroUsuarioNome: EditText
 //    private lateinit var txtCadastroUsuarioCPF: EditText
@@ -38,6 +49,25 @@ class UsuarioAcitivity : AppCompatActivity() {
 //
 //    private lateinit var database: UsuarioDatabase
 
+<<<<<<< HEAD
+=======
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_usuario)
+
+        btnCadastrarUsuario.setOnClickListener {
+            val novoUsuario = Usuario()
+            novoUsuario.salvarUsuario(
+                nomeUsuario = txtUsuarioNome.text.toString(),
+                cpfUsuario = txtUsuarioCpf.text.toString().toInt(),
+                croUsuario = txtUsuarioCro.text.toString().toInt(),
+                emailUsuario = txtUsuarioEmail.text.toString(),
+                senhaUsuario = txtUsuarioSenha.text.toString()
+            )
+        }
+
+
+>>>>>>> 140e0fcb6046cc06c7ed06ec91d3444f8db41d51
 //        txtCadastroUsuarioNome = findViewById(R.id.txtCadastroUsuarioNome)
 //        txtCadastroUsuarioCPF = findViewById(R.id.txtCadastroUsuarioCPF)
 //        txtCadastroUsuarioCRO = findViewById(R.id.txtCadastroUsuarioCRO)
@@ -51,6 +81,7 @@ class UsuarioAcitivity : AppCompatActivity() {
 //        database = UsuarioDatabase(this)
 //
 //        btnCadastroUsuarioConfirmar.setOnClickListener {
+<<<<<<< HEAD
 //            if (txtCadastroUsuarioNome.text.toString()
 //                    .isEmpty() || txtCadastroUsuarioCPF.text.toString().isEmpty() ||
 //                txtCadastroUsuarioEmail.text.toString()
@@ -70,3 +101,41 @@ class UsuarioAcitivity : AppCompatActivity() {
 }
 
 
+=======
+//            if(txtCadastroUsuarioNome.text.toString().isEmpty() || txtCadastroUsuarioCPF.text.toString().isEmpty() ||
+//                    txtCadastroUsuarioEmail.text.toString().isEmpty() || txtCadastroUsuarioCelular.text.toString().isEmpty()
+//                || txtCadastroUsuarioSenha.text.toString().isEmpty()){
+//                Toast.makeText(this,"Preencha Todos os Campos ", Toast.LENGTH_SHORT).show()
+//            }else if (!txtCadastroUsuarioSenha.text.toString().equals(txtCadastroUsuarioConfirmaSenha.text.toString())){
+//                Toast.makeText(this,"Senhas Diferentes!", Toast.LENGTH_SHORT).show()
+//            }else {
+//                salvarUsuario()
+//            }
+//        }
+//    }
+//
+//    private fun salvarUsuario(){
+//
+//        val usuario = Usuario(
+//            Nome = txtCadastroUsuarioNome.text.toString(),
+//            CPF = txtCadastroUsuarioCPF.text.toString(),
+//            CRO = txtCadastroUsuarioCRO.text.toString(),
+//            Email = txtCadastroUsuarioEmail.text.toString(),
+//            Celular = txtCadastroUsuarioCelular.text.toString(),
+//            Telefone = txtCadastroUsuarioTelefone.text.toString(),
+//            Senha = txtCadastroUsuarioSenha.text.toString(),
+//            Co_senha = txtCadastroUsuarioConfirmaSenha.text.toString()
+//
+//        )
+//
+//        val idUsuario = database.inserirUsuario(usuario)
+//
+//        if (idUsuario == -1L) {
+//            Toast.makeText(this,"Erro ao inserir", Toast.LENGTH_SHORT).show()
+//        } else {
+//            Toast.makeText(this, "Usuario inserido com sucesso id: $idUsuario", Toast.LENGTH_SHORT).show()
+//        }
+//
+    }
+}
+>>>>>>> 140e0fcb6046cc06c7ed06ec91d3444f8db41d51
