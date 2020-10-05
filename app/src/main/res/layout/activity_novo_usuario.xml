@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activity.NovoUsuarioAcitivity">
+    tools:context=".ui.activity.UsuarioAcitivity">
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -33,7 +33,7 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <Button
-                android:id="@+id/btnCadastroUsuarioConfirmar"
+                android:id="@+id/btnUsuarioCadastrar"
                 android:layout_width="0dp"
                 android:layout_height="64sp"
                 android:layout_marginStart="16dp"
@@ -42,17 +42,17 @@
                 android:layout_marginBottom="64dp"
                 android:background="@drawable/custom_button"
                 android:fontFamily="@font/roboto_bold"
-                android:text="Acessar"
+                android:text="Cadastrar"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtCadastroUsuarioConfirmaSenha" />
+                app:layout_constraintTop_toBottomOf="@+id/txtUsuarioConfirmaSenha" />
 
             <EditText
-                android:id="@+id/txtCadastroUsuarioNome"
+                android:id="@+id/txtUsuarioNome"
                 android:layout_width="0dp"
                 android:layout_height="38dp"
                 android:layout_marginTop="8dp"
@@ -79,10 +79,10 @@
                 android:textColor="#147DC7"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtCadastroUsuarioNome" />
+                app:layout_constraintTop_toBottomOf="@+id/txtUsuarioNome" />
 
             <EditText
-                android:id="@+id/txtCadastroUsuarioCPF"
+                android:id="@+id/txtUsuarioCpf"
                 android:layout_width="0dp"
                 android:layout_height="38dp"
                 android:background="@drawable/custom_textbox"
@@ -92,7 +92,7 @@
                 android:singleLine="true"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColorLink="#2196F3"
-                app:layout_constraintEnd_toEndOf="@+id/txtCadastroUsuarioNome"
+                app:layout_constraintEnd_toEndOf="@+id/txtUsuarioNome"
                 app:layout_constraintStart_toStartOf="@+id/textView7"
                 app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
@@ -107,10 +107,10 @@
                 android:textColor="#147DC7"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtCadastroUsuarioCPF" />
+                app:layout_constraintTop_toBottomOf="@+id/txtUsuarioCpf" />
 
             <EditText
-                android:id="@+id/txtCadastroUsuarioCRO"
+                android:id="@+id/txtCroUsuario"
                 android:layout_width="0dp"
                 android:layout_height="38dp"
                 android:layout_marginTop="8dp"
@@ -121,12 +121,12 @@
                 android:singleLine="true"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColorLink="#2196F3"
-                app:layout_constraintEnd_toEndOf="@+id/txtCadastroUsuarioCPF"
+                app:layout_constraintEnd_toEndOf="@+id/txtUsuarioCpf"
                 app:layout_constraintStart_toStartOf="@+id/textView8"
                 app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
             <EditText
-                android:id="@+id/txtCadastroUsuarioEmail"
+                android:id="@+id/txtUsuarioEmail"
                 android:layout_width="0dp"
                 android:layout_height="38dp"
                 android:layout_marginTop="8dp"
@@ -137,7 +137,7 @@
                 android:singleLine="true"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColorLink="#2196F3"
-                app:layout_constraintEnd_toEndOf="@+id/txtCadastroUsuarioCRO"
+                app:layout_constraintEnd_toEndOf="@+id/txtCroUsuario"
                 app:layout_constraintStart_toStartOf="@+id/textView9"
                 app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
@@ -152,10 +152,10 @@
                 android:textColor="#147DC7"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtCadastroUsuarioEmail" />
+                app:layout_constraintTop_toBottomOf="@+id/txtUsuarioEmail" />
 
             <EditText
-                android:id="@+id/txtCadastroUsuarioCelular"
+                android:id="@+id/txtUsuarioCelular"
                 android:layout_width="0dp"
                 android:layout_height="38dp"
                 android:layout_marginTop="8dp"
@@ -166,7 +166,7 @@
                 android:singleLine="true"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColorLink="#2196F3"
-                app:layout_constraintEnd_toEndOf="@+id/txtCadastroUsuarioEmail"
+                app:layout_constraintEnd_toEndOf="@+id/txtUsuarioEmail"
                 app:layout_constraintStart_toStartOf="@+id/textView10"
                 app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
@@ -181,10 +181,10 @@
                 android:textColor="#147DC7"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtCadastroUsuarioCelular" />
+                app:layout_constraintTop_toBottomOf="@+id/txtUsuarioCelular" />
 
             <EditText
-                android:id="@+id/txtCadastroUsuarioTelefone"
+                android:id="@+id/txtTelefoneTelefone"
                 android:layout_width="0dp"
                 android:layout_height="38dp"
                 android:layout_marginTop="8dp"
@@ -195,7 +195,7 @@
                 android:singleLine="true"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColorLink="#2196F3"
-                app:layout_constraintEnd_toEndOf="@+id/txtCadastroUsuarioCelular"
+                app:layout_constraintEnd_toEndOf="@+id/txtUsuarioCelular"
                 app:layout_constraintStart_toStartOf="@+id/textView11"
                 app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
@@ -210,10 +210,10 @@
                 android:textColor="#147DC7"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtCadastroUsuarioTelefone" />
+                app:layout_constraintTop_toBottomOf="@+id/txtTelefoneTelefone" />
 
             <EditText
-                android:id="@+id/txtCadastroUsuarioSenha"
+                android:id="@+id/txtUsuarioSenha"
                 android:layout_width="0dp"
                 android:layout_height="38dp"
                 android:layout_marginTop="8dp"
@@ -224,7 +224,7 @@
                 android:singleLine="true"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColorLink="#2196F3"
-                app:layout_constraintEnd_toEndOf="@+id/txtCadastroUsuarioTelefone"
+                app:layout_constraintEnd_toEndOf="@+id/txtTelefoneTelefone"
                 app:layout_constraintStart_toStartOf="@+id/textView12"
                 app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
@@ -239,10 +239,10 @@
                 android:textColor="#147DC7"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtCadastroUsuarioSenha" />
+                app:layout_constraintTop_toBottomOf="@+id/txtUsuarioSenha" />
 
             <EditText
-                android:id="@+id/txtCadastroUsuarioConfirmaSenha"
+                android:id="@+id/txtUsuarioConfirmaSenha"
                 android:layout_width="0dp"
                 android:layout_height="38dp"
                 android:layout_marginTop="8dp"
@@ -253,7 +253,7 @@
                 android:singleLine="true"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColorLink="#2196F3"
-                app:layout_constraintEnd_toEndOf="@+id/txtCadastroUsuarioSenha"
+                app:layout_constraintEnd_toEndOf="@+id/txtUsuarioSenha"
                 app:layout_constraintStart_toStartOf="@+id/textView13"
                 app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
@@ -268,7 +268,7 @@
                 android:textColor="#147DC7"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtCadastroUsuarioCRO" />
+                app:layout_constraintTop_toBottomOf="@+id/txtCroUsuario" />
 
             <TextView
                 android:id="@+id/textView3"
