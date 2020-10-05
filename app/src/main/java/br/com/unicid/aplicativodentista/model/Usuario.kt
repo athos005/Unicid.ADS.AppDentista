@@ -1,14 +1,20 @@
 package br.com.unicid.aplicativodentista.model
 
-data class Usuario (
+class Usuario {
+    val Nome = ""
+    val CPF = 0
+    val CRO = ""
+    val Email = ""
+    val Senha = ""
+    val CodUsuario: Int? =  null
 
-    val Nome: String,
-    val CPF: String,
-    val CRO: String,
-    val Email: String,
-    val Celular: String,
-    val Telefone: String,
-    val Senha: String,
-    val Co_senha: String,
-    val Id: Int? =  null
-)
+    fun salvarUsuario(
+        nomeUsuario: String,
+        cpfUsuario: Int,
+        croUsuario: Int,
+        emailUsuario: String,
+        senhaUsuario: String
+    ){
+
+    }
+}

@@ -17,7 +17,7 @@
 <!--        </activity>-->
 
         <!-- LOGIN USUARIO -->
-        <activity android:name=".ui.activity.NovoUsuarioAcitivity">
+        <activity android:name=".ui.activity.UsuarioAcitivity">
            <intent-filter>
                <action android:name="android.intent.action.MAIN" />
 
