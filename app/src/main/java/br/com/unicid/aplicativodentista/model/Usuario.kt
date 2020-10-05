@@ -1,14 +1,39 @@
 package br.com.unicid.aplicativodentista.model
 
-data class Usuario (
+import android.text.Editable
 
-    val Nome: String,
-    val CPF: String,
-    val CRO: String,
-    val Email: String,
-    val Celular: String,
-    val Telefone: String,
-    val Senha: String,
-    val Co_senha: String,
-    val Id: Int? =  null
-)
+class Usuario {
+    var nome = ""
+    var cpf = 0
+    var cro = 0
+    var email = ""
+    var senha = ""
+    var td: Int? = null //TABELA?
+
+    fun salvarUsuario(
+        nomeUsuario: String,
+        cpfUsuario: Int,
+        croUsuario: Int,
+        emailUsuario: String,
+        senhaUsuario: String
+    ) {
+        this.nome = nomeUsuario
+        this.cpf = cpfUsuario
+        this.cro = croUsuario
+        this.email = emailUsuario
+        this.senha = senhaUsuario
+    }
+}
+
+
+//    val idUsuario = database.inserirUsuario(usuario)
+//
+//    if (idUsuario == -1L) {
+//        Toast.makeText(this, "Erro ao inserir", Toast.LENGTH_SHORT).show()
+//    } else {
+//        Toast.makeText(this, "Usuario inserido com sucesso id: $idUsuario", Toast.LENGTH_SHORT)
+//            .show()
+//    }
+
+
+
