@@ -14,7 +14,7 @@ class UsuarioDAO(context: Context?) {
         banco = usuarioDB.writableDatabase
     }
 
-    fun salvar(usuario: Usuario): Long {
+    fun salvarUsuario(usuario: Usuario): Long {
         val values = ContentValues()
         values.put("NOME", usuario.nome)
         values.put("CPF", usuario.cpf)

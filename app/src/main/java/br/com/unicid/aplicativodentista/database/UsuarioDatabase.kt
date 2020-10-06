@@ -9,18 +9,22 @@ class UsuarioDatabase(context: Context):SQLiteOpenHelper(context, "usuario.db", 
 
     override fun onCreate(db: SQLiteDatabase?) { //Criação do Banco de Dados
 
-        db?.execSQL("CREATE TABLE USUARIO(ID_USUARIO INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                "NOME VARCHAR(50), " +
-                "CPF INTEGER, " +
-                "CRO VARCHAR(50), " +
-                "EMAIL VARCHAR(50), " +
-                "SENHA VARCHAR(50)")
+        val sql = """
+            CREATE TABLE USUARIO(
+            ID INTEGER PRIMARY KEY AUTOINCREMENT,
+            NOME TEXT,
+            CPF INTEGER,
+            CRO TEXT,
+            EMAIL TEXT,
+            SENHA TEXT)
+        """.trimIndent()
 
+        db?.execSQL(sql)
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) { //Atualização de Versão do Banco de Dados
-//        db?.execSQL("DROP TABLE IF EXISTS USUARIO")
-//        onCreate(db)
+        db?.execSQL("DROP TABLE IF EXISTS USUARIO")
+        onCreate(db)
     }
 
 

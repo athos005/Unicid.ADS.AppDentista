@@ -16,13 +16,22 @@
 <!--            <category android:name="android.intent.category.LAUNCHER" />-->
 <!--        </activity>-->
 
-        <!-- LOGIN USUARIO -->
-        <activity android:name=".ui.activity.UsuarioAcitivity">
-           <intent-filter>
-               <action android:name="android.intent.action.MAIN" />
+        <!-- NOVO USUARIO -->
+<!--        <activity android:name=".ui.activity.UsuarioAcitivity">-->
+<!--           <intent-filter>-->
+<!--               <action android:name="android.intent.action.MAIN" />-->
 
-               <category android:name="android.intent.category.LAUNCHER" />
-           </intent-filter>
+<!--               <category android:name="android.intent.category.LAUNCHER" />-->
+<!--           </intent-filter>-->
+<!--        </activity>-->
+
+        <!-- NOVO PACIENTE -->
+        <activity android:name=".ui.activity.DadosPacienteActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <meta-data
