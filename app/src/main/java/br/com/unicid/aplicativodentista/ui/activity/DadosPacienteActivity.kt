@@ -6,12 +6,9 @@ import android.os.Bundle
 import android.widget.EditText
 import android.widget.Toast
 import br.com.unicid.aplicativodentista.R
-import br.com.unicid.aplicativodentista.database.PacienteDAO
-import br.com.unicid.aplicativodentista.database.UsuarioDAO
+import br.com.unicid.aplicativodentista.dao.PacienteDAO
 import br.com.unicid.aplicativodentista.model.Paciente
-import br.com.unicid.aplicativodentista.model.Usuario
 import kotlinx.android.synthetic.main.activity_dados_paciente.*
-import kotlinx.android.synthetic.main.activity_usuario.*
 
 class DadosPacienteActivity : AppCompatActivity() {
 

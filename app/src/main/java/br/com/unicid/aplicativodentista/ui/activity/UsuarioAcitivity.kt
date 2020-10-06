@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.EditText
 import android.widget.Toast
 import br.com.unicid.aplicativodentista.R
-import br.com.unicid.aplicativodentista.database.UsuarioDAO
+import br.com.unicid.aplicativodentista.dao.UsuarioDAO
 import br.com.unicid.aplicativodentista.model.Usuario
 import kotlinx.android.synthetic.main.activity_usuario.*
 

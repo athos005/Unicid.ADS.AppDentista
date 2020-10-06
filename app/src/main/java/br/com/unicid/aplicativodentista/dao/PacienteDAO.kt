@@ -1,10 +1,10 @@
-package br.com.unicid.aplicativodentista.database
+package br.com.unicid.aplicativodentista.dao
 
 import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
+import br.com.unicid.aplicativodentista.database.PacienteDatabase
 import br.com.unicid.aplicativodentista.model.Paciente
-import br.com.unicid.aplicativodentista.model.Usuario
 
 class PacienteDAO(context: Context?){
 
