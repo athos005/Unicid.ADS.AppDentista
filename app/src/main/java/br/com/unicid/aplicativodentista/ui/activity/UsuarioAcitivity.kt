@@ -44,7 +44,7 @@ class UsuarioAcitivity : AppCompatActivity() {
         novoUsuario.email = emailUsuario?.text.toString()
         novoUsuario.senha = senhaUsuario?.text.toString()
         novoUsuario.confirmarSenha = confirmaSenhaUsuario!!.text.toString()
-        val id = daoUsuario?.salvar(novoUsuario)
+        val id = daoUsuario?.salvarUsuario(novoUsuario)
         Toast.makeText(this, "Usuario cadastrato com id $id", Toast.LENGTH_SHORT).show()
     }
 }
