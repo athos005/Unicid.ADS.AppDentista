@@ -1,6 +1,7 @@
 package br.com.unicid.aplicativodentista.ui.activity
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
@@ -37,6 +38,8 @@ class DadosPacienteActivity : AppCompatActivity() {
 
         btnSalvarPaciente.setOnClickListener() {
             salvarPaciente()
+            finish()
+            novaTela()
         }
     }
 
@@ -50,5 +53,10 @@ class DadosPacienteActivity : AppCompatActivity() {
         novoPaciente.telefonePaciente = telefonePaciente!!.text.toString()
         val id = daoPaciente?.salvarPaciente(novoPaciente)
         Toast.makeText(this, "Paciente cadastrato com id $id", Toast.LENGTH_SHORT).show()
+    }
+
+    fun novaTela() {
+        val intent = Intent(this, ListaPacientesActivity::class.java).apply {  }
+        startActivity(intent)
     }
 }
