@@ -1,14 +1,13 @@
 package br.com.unicid.aplicativodentista.model
 
-data class Usuario (
+import java.io.Serializable
 
-    val Nome: String,
-    val CPF: String,
-    val CRO: String,
-    val Email: String,
-    val Celular: String,
-    val Telefone: String,
-    val Senha: String,
-    val Co_senha: String,
-    val Id: Int? =  null
-)
+class Usuario : Serializable {
+    var nome = ""
+    var cpf = 0
+    var cro = ""
+    var email = ""
+    var senha = ""
+    var confirmarSenha = ""
+    var codUsuario: Int? =  null
+}

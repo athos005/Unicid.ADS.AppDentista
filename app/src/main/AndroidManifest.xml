@@ -10,19 +10,36 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <!-- LOGIN USUARIO -->
+<!--        &lt;!&ndash; LISTA USUARIO &ndash;&gt;-->
+        <activity android:name=".ui.activity.ListaPacientesActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+<!--        &lt;!&ndash; LOGIN USUARIO &ndash;&gt;-->
 <!--        <activity android:name=".ui.activity.LoginUsuarioAcitivity">-->
-<!--            <action android:name="android.intent.action.MAIN" />-->
-<!--            <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
 <!--        </activity>-->
 
-        <!-- LOGIN USUARIO -->
-        <activity android:name=".ui.activity.NovoUsuarioAcitivity">
-           <intent-filter>
-               <action android:name="android.intent.action.MAIN" />
+<!--        &lt;!&ndash; NOVO USUARIO &ndash;&gt;-->
+<!--        <activity android:name=".ui.activity.UsuarioAcitivity">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
 
-               <category android:name="android.intent.category.LAUNCHER" />
-           </intent-filter>
+<!--         NOVO PACIENTE -->
+        <activity android:name=".ui.activity.DadosPacienteActivity">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
 
         <meta-data
