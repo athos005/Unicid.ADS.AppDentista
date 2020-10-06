@@ -4,7 +4,7 @@ import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 
-class PacienteDatabase(context: Context) : SQLiteOpenHelper(context, "paciente.db", null, 1) {
+class PacienteDatabase(context: Context) : SQLiteOpenHelper(context, "pacientes.db", null, 1) {
 
 
     override fun onCreate(db: SQLiteDatabase?) { //Criação do Banco de Dados
@@ -28,8 +28,8 @@ class PacienteDatabase(context: Context) : SQLiteOpenHelper(context, "paciente.d
         oldVersion: Int,
         newVersion: Int
     ) { //Atualização de Versão do Banco de Dados
-        db?.execSQL("DROP TABLE IF EXISTS PACIENTE")
-        onCreate(db)
+//        db?.execSQL("DROP TABLE IF EXISTS PACIENTE")
+//        onCreate(db)
     }
 
 
