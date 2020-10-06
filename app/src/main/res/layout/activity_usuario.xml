@@ -6,17 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".ui.activity.UsuarioAcitivity">
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:background="@drawable/custon_background"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/custon_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btnCadastrarUsuario"
@@ -27,6 +27,7 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/custom_button"
         android:fontFamily="@font/roboto_bold"
+        android:onClick="salvarUsuario"
         android:text="Cadastrar"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"

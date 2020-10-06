@@ -2,31 +2,8 @@ package br.com.unicid.aplicativodentista.ui.activity
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-<<<<<<< HEAD
+import android.widget.EditText
 import android.widget.Toast
-import br.com.unicid.aplicativodentista.R
-import br.com.unicid.aplicativodentista.model.Usuario
-import kotlinx.android.synthetic.main.activity_novo_usuario.*
-
-class UsuarioAcitivity : AppCompatActivity() {
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_novo_usuario)
-
-        val usuario = Usuario()
-
-
-        btnUsuarioCadastrar.setOnClickListener {
-            usuario.salvarUsuario(
-                nomeUsuario = txtUsuarioNome.text.toString(),
-                cpfUsuario = txtCroUsuario.text.toString().toInt(),
-                croUsuario = txtCroUsuario.text.toString().toInt(),
-                emailUsuario = txtUsuarioEmail.text.toString(),
-                senhaUsuario = txtUsuarioSenha.text.toString()
-            )
-        }
-=======
 import br.com.unicid.aplicativodentista.R
 import br.com.unicid.aplicativodentista.database.UsuarioDAO
 import br.com.unicid.aplicativodentista.model.Usuario
@@ -34,8 +11,43 @@ import kotlinx.android.synthetic.main.activity_usuario.*
 
 class UsuarioAcitivity : AppCompatActivity() {
 
-    var daoUsuario: UsuarioDAO? = null
->>>>>>> 140e0fcb6046cc06c7ed06ec91d3444f8db41d51
+    var nomeUsuario: EditText? = null
+    var cpfUsuario: EditText? = null
+    var croUsuario: EditText? = null
+    var emailUsuario: EditText? = null
+    var senhaUsuario: EditText? = null
+    var confirmaSenhaUsuario: EditText? = null
+    var daoUsuario : UsuarioDAO? = null
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_usuario)
+
+        nomeUsuario = findViewById(R.id.txtUsuarioNome)
+        cpfUsuario = findViewById(R.id.txtUsuarioCpf)
+        croUsuario = findViewById(R.id.txtUsuarioEmail)
+        emailUsuario = findViewById(R.id.txtUsuarioEmail)
+        senhaUsuario = findViewById(R.id.txtUsuarioSenha)
+        confirmaSenhaUsuario = findViewById(R.id.txtUsuarioConfirmaSenha)
+        daoUsuario = UsuarioDAO(this)
+
+        btnCadastrarUsuario.setOnClickListener() {
+            salvarUsuario()
+        }
+    }
+
+    fun salvarUsuario() {
+        val novoUsuario = Usuario()
+        novoUsuario.nome = nomeUsuario?.text.toString()
+        novoUsuario.cpf = cpfUsuario?.text.toString().toInt()
+        novoUsuario.cro = croUsuario?.text.toString()
+        novoUsuario.email = emailUsuario?.text.toString()
+        novoUsuario.senha = senhaUsuario?.text.toString()
+        novoUsuario.confirmarSenha = confirmaSenhaUsuario!!.text.toString()
+        val id = daoUsuario?.salvar(novoUsuario)
+        Toast.makeText(this, "Usuario cadastrato com id $id", Toast.LENGTH_SHORT).show()
+    }
+}
 
 //    private lateinit var txtCadastroUsuarioNome: EditText
 //    private lateinit var txtCadastroUsuarioCPF: EditText
@@ -49,25 +61,6 @@ class UsuarioAcitivity : AppCompatActivity() {
 //
 //    private lateinit var database: UsuarioDatabase
 
-<<<<<<< HEAD
-=======
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_usuario)
-
-        btnCadastrarUsuario.setOnClickListener {
-            val novoUsuario = Usuario()
-            novoUsuario.salvarUsuario(
-                nomeUsuario = txtUsuarioNome.text.toString(),
-                cpfUsuario = txtUsuarioCpf.text.toString().toInt(),
-                croUsuario = txtUsuarioCro.text.toString().toInt(),
-                emailUsuario = txtUsuarioEmail.text.toString(),
-                senhaUsuario = txtUsuarioSenha.text.toString()
-            )
-        }
-
-
->>>>>>> 140e0fcb6046cc06c7ed06ec91d3444f8db41d51
 //        txtCadastroUsuarioNome = findViewById(R.id.txtCadastroUsuarioNome)
 //        txtCadastroUsuarioCPF = findViewById(R.id.txtCadastroUsuarioCPF)
 //        txtCadastroUsuarioCRO = findViewById(R.id.txtCadastroUsuarioCRO)
@@ -81,7 +74,6 @@ class UsuarioAcitivity : AppCompatActivity() {
 //        database = UsuarioDatabase(this)
 //
 //        btnCadastroUsuarioConfirmar.setOnClickListener {
-<<<<<<< HEAD
 //            if (txtCadastroUsuarioNome.text.toString()
 //                    .isEmpty() || txtCadastroUsuarioCPF.text.toString().isEmpty() ||
 //                txtCadastroUsuarioEmail.text.toString()
@@ -97,11 +89,8 @@ class UsuarioAcitivity : AppCompatActivity() {
 //                salvarUsuario()
 //            }
 //        }
-    }
-}
-
-
-=======
+//    }
+//}
 //            if(txtCadastroUsuarioNome.text.toString().isEmpty() || txtCadastroUsuarioCPF.text.toString().isEmpty() ||
 //                    txtCadastroUsuarioEmail.text.toString().isEmpty() || txtCadastroUsuarioCelular.text.toString().isEmpty()
 //                || txtCadastroUsuarioSenha.text.toString().isEmpty()){
@@ -136,6 +125,4 @@ class UsuarioAcitivity : AppCompatActivity() {
 //            Toast.makeText(this, "Usuario inserido com sucesso id: $idUsuario", Toast.LENGTH_SHORT).show()
 //        }
 //
-    }
-}
->>>>>>> 140e0fcb6046cc06c7ed06ec91d3444f8db41d51
+
