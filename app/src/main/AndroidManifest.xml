@@ -10,13 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-<!--        &lt;!&ndash; LISTA USUARIO &ndash;&gt;-->
-        <activity android:name=".ui.activity.ListaPacientesActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <!-- LISTA USUARIO -->
+<!--        <activity android:name=".ui.activity.ListaPacientesActivity">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
 
 <!--        &lt;!&ndash; LOGIN USUARIO &ndash;&gt;-->
 <!--        <activity android:name=".ui.activity.LoginUsuarioAcitivity">-->
@@ -34,13 +34,22 @@
 <!--            </intent-filter>-->
 <!--        </activity>-->
 
+
+        <!-- Agenda -->
+        <activity android:name=".ui.activity.AgendaActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
 <!--         NOVO PACIENTE -->
-        <activity android:name=".ui.activity.DadosPacienteActivity">
+<!--        <activity android:name=".ui.activity.DadosPacienteActivity">-->
 <!--            <intent-filter>-->
 <!--                <action android:name="android.intent.action.MAIN" />-->
 <!--                <category android:name="android.intent.category.LAUNCHER" />-->
 <!--            </intent-filter>-->
-        </activity>
+<!--        </activity>-->
 
         <meta-data
             android:name="preloaded_fonts"

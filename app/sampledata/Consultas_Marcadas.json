@@ -1,0 +1,22 @@
+{
+  "Consultas": [
+    {
+      "horarioInicio": "11:00",
+      "horarioFim": "12:00",
+      "nomePaciente": "Fernanda Pereira",
+      "procedimento": "Extração"
+    },
+    {
+      "horarioInicio": "14:00",
+      "horarioFim": "15:00",
+      "nomePaciente": "Maria Ferreira",
+      "procedimento": "Clareamento"
+    },
+    {
+      "horarioInicio": "16:00",
+      "horarioFim": "17:00",
+      "nomePaciente": "José Silva",
+      "procedimento": "Limpeza"
+    }
+  ]
+}
