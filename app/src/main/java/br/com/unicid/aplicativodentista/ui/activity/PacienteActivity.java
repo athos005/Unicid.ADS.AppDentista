@@ -1,4 +1,4 @@
-package br.com.unicid.aplicativodentista;
+package br.com.unicid.aplicativodentista.ui.activity;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import br.com.unicid.aplicativodentista.R;
 import br.com.unicid.aplicativodentista.ui.main.SectionsPagerAdapter;
 
 public class PacienteActivity extends AppCompatActivity {

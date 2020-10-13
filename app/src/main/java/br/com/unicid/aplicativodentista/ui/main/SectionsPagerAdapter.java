@@ -7,7 +7,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import br.com.unicid.aplicativodentista.PacienteDadosFragment;
+import br.com.unicid.aplicativodentista.ui.activity.PacienteDadosFragment;
 import br.com.unicid.aplicativodentista.R;
 
 /**

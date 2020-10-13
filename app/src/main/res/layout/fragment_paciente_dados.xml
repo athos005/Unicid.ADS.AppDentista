@@ -33,7 +33,19 @@
 
             <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/Label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Nome"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
                     android:id="@+id/txtPacienteNome"
@@ -79,17 +91,63 @@
                     app:layout_constraintStart_toStartOf="@+id/textView7"
                     app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
+                <EditText
+                    android:id="@+id/txtPacienteRg"
+                    android:layout_width="0dp"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/custom_textbox"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/corTexto"
+                    android:textColorLink="#2196F3"
+                    app:layout_constraintEnd_toEndOf="@+id/txtPacienteCpf"
+                    app:layout_constraintStart_toStartOf="@+id/textView8"
+                    app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
                 <TextView
-                    android:id="@+id/textView11"
+                    android:id="@+id/textView8"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/roboto_medium"
-                    android:text="Telefone"
+                    android:text="RG"
                     android:textColor="@color/colorLabel"
                     android:textSize="16sp"
-                    app:layout_constraintStart_toStartOf="@+id/txtPacienteCelular"
-                    app:layout_constraintTop_toBottomOf="@+id/txtPacienteCelular" />
+                    app:layout_constraintStart_toStartOf="@+id/txtPacienteCpf"
+                    app:layout_constraintTop_toBottomOf="@+id/txtPacienteCpf" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="E-mail"
+                    android:textColor="@color/colorLabel"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/txtPacienteRg"
+                    app:layout_constraintTop_toBottomOf="@+id/txtPacienteRg" />
+
+                <EditText
+                    android:id="@+id/txtPacienteEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/custom_textbox"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/corTexto"
+                    android:textColorLink="#2196F3"
+                    app:layout_constraintEnd_toEndOf="@+id/txtPacienteRg"
+                    app:layout_constraintStart_toStartOf="@+id/textView9"
+                    app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
                 <TextView
                     android:id="@+id/textView10"
@@ -102,17 +160,6 @@
                     android:textSize="16sp"
                     app:layout_constraintStart_toStartOf="@+id/txtPacienteEmail"
                     app:layout_constraintTop_toBottomOf="@+id/txtPacienteEmail" />
-
-                <Spinner
-                    android:id="@+id/txtPacienteGenero"
-                    style="@style/TextBox"
-                    android:layout_width="0dp"
-                    android:layout_marginTop="8dp"
-                    android:ems="10"
-                    android:inputType="date"
-                    app:layout_constraintEnd_toEndOf="@+id/txtPacienteNascimento"
-                    app:layout_constraintStart_toStartOf="@+id/textView15"
-                    app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
                 <EditText
                     android:id="@+id/txtPacienteCelular"
@@ -133,37 +180,16 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
                 <TextView
-                    android:id="@+id/textView16"
-                    style="@style/Label"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:text="CEP"
-                    app:layout_constraintStart_toStartOf="@+id/txtPacienteGenero"
-                    app:layout_constraintTop_toBottomOf="@+id/txtPacienteGenero" />
-
-                <TextView
-                    android:id="@+id/textView3"
-                    style="@style/Label"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
-                    android:text="Nome"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/textView8"
+                    android:id="@+id/textView11"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/roboto_medium"
-                    android:text="RG"
+                    android:text="Telefone"
                     android:textColor="@color/colorLabel"
                     android:textSize="16sp"
-                    app:layout_constraintStart_toStartOf="@+id/txtPacienteCpf"
-                    app:layout_constraintTop_toBottomOf="@+id/txtPacienteCpf" />
+                    app:layout_constraintStart_toStartOf="@+id/txtPacienteCelular"
+                    app:layout_constraintTop_toBottomOf="@+id/txtPacienteCelular" />
 
                 <EditText
                     android:id="@+id/txtPacienteTelefone"
@@ -183,50 +209,6 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
                 <EditText
-                    android:id="@+id/txtPacienteEmail"
-                    android:layout_width="0dp"
-                    android:layout_height="38dp"
-                    android:background="@drawable/custom_textbox"
-                    android:ems="10"
-                    android:inputType="textEmailAddress"
-                    android:selectAllOnFocus="true"
-                    android:singleLine="true"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                    android:textColor="@color/corTexto"
-                    android:textColorLink="#2196F3"
-                    app:layout_constraintEnd_toEndOf="@+id/txtPacienteRg"
-                    app:layout_constraintStart_toStartOf="@+id/textView9"
-                    app:layout_constraintTop_toBottomOf="@+id/textView9"
-                    android:layout_marginTop="8dp" />
-
-                <TextView
-                    android:id="@+id/textView15"
-                    style="@style/Label"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:text="Gênero"
-                    app:layout_constraintStart_toStartOf="@+id/txtPacienteNascimento"
-                    app:layout_constraintTop_toBottomOf="@+id/txtPacienteNascimento" />
-
-                <EditText
-                    android:id="@+id/txtPacienteRg"
-                    android:layout_width="0dp"
-                    android:layout_height="38dp"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/custom_textbox"
-                    android:ems="10"
-                    android:inputType="text"
-                    android:selectAllOnFocus="true"
-                    android:singleLine="true"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                    android:textColor="@color/corTexto"
-                    android:textColorLink="#2196F3"
-                    app:layout_constraintEnd_toEndOf="@+id/txtPacienteCpf"
-                    app:layout_constraintStart_toStartOf="@+id/textView8"
-                    app:layout_constraintTop_toBottomOf="@+id/textView8" />
-
-                <EditText
                     android:id="@+id/txtPacienteNascimento"
                     style="@style/TextBox"
                     android:layout_width="0dp"
@@ -238,16 +220,45 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
                 <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="0dp"
+                    android:id="@+id/textView14"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:fontFamily="@font/roboto_medium"
-                    android:text="E-mail"
-                    android:textColor="@color/colorLabel"
-                    android:textSize="16sp"
-                    app:layout_constraintStart_toStartOf="@+id/txtPacienteRg"
-                    app:layout_constraintTop_toBottomOf="@+id/txtPacienteRg" />
+                    android:text="Nascimento"
+                    app:layout_constraintStart_toStartOf="@+id/txtPacienteTelefone"
+                    app:layout_constraintTop_toBottomOf="@+id/txtPacienteTelefone" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Gênero"
+                    app:layout_constraintStart_toStartOf="@+id/txtPacienteNascimento"
+                    app:layout_constraintTop_toBottomOf="@+id/txtPacienteNascimento" />
+
+                <Spinner
+                    android:id="@+id/txtPacienteGenero"
+                    style="@style/TextBox"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:inputType="date"
+                    app:layout_constraintEnd_toEndOf="@+id/txtPacienteNascimento"
+                    app:layout_constraintStart_toStartOf="@+id/textView15"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="CEP"
+                    app:layout_constraintStart_toStartOf="@+id/txtPacienteGenero"
+                    app:layout_constraintTop_toBottomOf="@+id/txtPacienteGenero" />
 
                 <EditText
                     android:id="@+id/txtPacienteCep"
@@ -260,16 +271,52 @@
                     app:layout_constraintStart_toStartOf="@+id/textView16"
                     app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
+                <EditText
+                    android:id="@+id/txtPacienteEndereco"
+                    style="@style/TextBox"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toStartOf="@+id/textView18"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
                 <TextView
-                    android:id="@+id/textView14"
+                    android:id="@+id/textView17"
                     style="@style/Label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:text="Nascimento"
-                    app:layout_constraintStart_toStartOf="@+id/txtPacienteTelefone"
-                    app:layout_constraintTop_toBottomOf="@+id/txtPacienteTelefone" />
+                    android:text="Endereço"
+                    app:layout_constraintStart_toStartOf="@+id/txtPacienteCep"
+                    app:layout_constraintTop_toBottomOf="@+id/txtPacienteCep" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nº"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView17"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/txtPacienteEndereco" />
+
+                <EditText
+                    android:id="@+id/txtPacienteNumEndereco"
+                    style="@style/TextBox"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="@+id/txtPacienteCep"
+                    app:layout_constraintStart_toStartOf="@+id/textView18"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18" />
             </android.support.constraint.ConstraintLayout>
+
         </LinearLayout>
     </ScrollView>
 
