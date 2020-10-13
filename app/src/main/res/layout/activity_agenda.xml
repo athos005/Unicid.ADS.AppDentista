@@ -28,8 +28,8 @@
         android:layout_marginEnd="16dp"
         android:background="#FFFFFF"
         android:focusedMonthDateColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
     <ListView
@@ -40,13 +40,15 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toTopOf="@+id/menu_agenda_activity"
+        app:layout_constraintEnd_toEndOf="@id/menu_agenda_activity"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CalendarioAgenda"
-        app:layout_constraintVertical_bias="1.0"
-        tools:listitem="@layout/info_consulta_marcada" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/info_consulta_marcada">
+
+    </ListView>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/floatingActionButton"
@@ -54,13 +56,30 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/corPrincipal"
         android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintBottom_toTopOf="@+id/menu_agenda_activity"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_action_adicionar" />
+        app:srcCompat="@drawable/ic_action_adicionar"
+        android:focusable="true" />
+
+    <android.support.design.widget.BottomNavigationView
+
+        android:id="@+id/menu_agenda_activity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/corPrincipal"
+        app:itemIconTint="#48A4E4"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/menu_navegacao"/>
 
 </android.support.constraint.ConstraintLayout>

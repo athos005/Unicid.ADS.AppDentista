@@ -9,48 +9,58 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <!-- LISTA USUARIO -->
-<!--        <activity android:name=".ui.activity.ListaPacientesActivity">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
-
-<!--        &lt;!&ndash; LOGIN USUARIO &ndash;&gt;-->
-<!--        <activity android:name=".ui.activity.LoginUsuarioAcitivity">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
-
-<!--        &lt;!&ndash; NOVO USUARIO &ndash;&gt;-->
-<!--        <activity android:name=".ui.activity.UsuarioAcitivity">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
-
-
-        <!-- Agenda -->
-        <activity android:name=".ui.activity.AgendaActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity
+            android:name=".PacienteActivity"
+            android:label="@string/title_activity_paciente"
+            android:theme="@style/AppTheme.NoActionBar">
+             <intent-filter>
+             <action android:name="android.intent.action.MAIN" />
+             <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
         </activity>
-
-<!--         NOVO PACIENTE -->
-<!--        <activity android:name=".ui.activity.DadosPacienteActivity">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
-
+        <!-- LISTA USUARIO -->
+        <!-- <activity android:name=".ui.activity.ListaPacientesActivity"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <!-- &lt;!&ndash; LOGIN USUARIO &ndash;&gt; -->
+        <!-- <activity android:name=".ui.activity.LoginUsuarioAcitivity"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <!-- &lt;!&ndash; NOVO USUARIO &ndash;&gt; -->
+        <!-- <activity android:name=".ui.activity.UsuarioAcitivity"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <!-- AGENDA -->
+        <!-- <activity android:name=".ui.activity.AgendaActivity"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <!-- NOVO PACIENTE -->
+        <!-- <activity android:name=".ui.activity.DadosPacienteActivity"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <!-- AGENDAMENTO -->
+        <!-- <activity android:name=".ui.activity.AgendamentoActivity"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <!-- Paciente -->
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

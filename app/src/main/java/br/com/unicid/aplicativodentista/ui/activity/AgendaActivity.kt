@@ -11,6 +11,6 @@ class AgendaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_agenda)
-//        setSupportActionBar(findViewById(R.id.toolbar))
+        title = "Agenda"
     }
 }

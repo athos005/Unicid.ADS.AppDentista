@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#DFF2FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/txtPacienteNome"
+                    android:layout_width="0dp"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/custom_textbox"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/corTexto"
+                    android:textColorLink="#2196F3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textView3"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    style="@style/Label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="CPF"
+                    app:layout_constraintStart_toStartOf="@+id/txtPacienteNome"
+                    app:layout_constraintTop_toBottomOf="@+id/txtPacienteNome" />
+
+                <EditText
+                    android:id="@+id/txtPacienteCpf"
+                    android:layout_width="0dp"
+                    android:layout_height="38dp"
+                    android:background="@drawable/custom_textbox"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/corTexto"
+                    android:textColorLink="#2196F3"
+                    app:layout_constraintEnd_toEndOf="@+id/txtPacienteNome"
+                    app:layout_constraintStart_toStartOf="@+id/textView7"
+                    app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Telefone"
+                    android:textColor="@color/colorLabel"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/txtPacienteCelular"
+                    app:layout_constraintTop_toBottomOf="@+id/txtPacienteCelular" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Celular"
+                    android:textColor="@color/colorLabel"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/txtPacienteEmail"
+                    app:layout_constraintTop_toBottomOf="@+id/txtPacienteEmail" />
+
+                <Spinner
+                    android:id="@+id/txtPacienteGenero"
+                    style="@style/TextBox"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:inputType="date"
+                    app:layout_constraintEnd_toEndOf="@+id/txtPacienteNascimento"
+                    app:layout_constraintStart_toStartOf="@+id/textView15"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+                <EditText
+                    android:id="@+id/txtPacienteCelular"
+                    android:layout_width="0dp"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/custom_textbox"
+                    android:ems="10"
+                    android:inputType="text|phone"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/corTexto"
+                    android:textColorLink="#2196F3"
+                    app:layout_constraintEnd_toEndOf="@+id/txtPacienteEmail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView10"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="CEP"
+                    app:layout_constraintStart_toStartOf="@+id/txtPacienteGenero"
+                    app:layout_constraintTop_toBottomOf="@+id/txtPacienteGenero" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/Label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Nome"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="RG"
+                    android:textColor="@color/colorLabel"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/txtPacienteCpf"
+                    app:layout_constraintTop_toBottomOf="@+id/txtPacienteCpf" />
+
+                <EditText
+                    android:id="@+id/txtPacienteTelefone"
+                    android:layout_width="0dp"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/custom_textbox"
+                    android:ems="10"
+                    android:inputType="text|phone"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/corTexto"
+                    android:textColorLink="#2196F3"
+                    app:layout_constraintEnd_toEndOf="@+id/txtPacienteCelular"
+                    app:layout_constraintStart_toStartOf="@+id/textView11"
+                    app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+                <EditText
+                    android:id="@+id/txtPacienteEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="38dp"
+                    android:background="@drawable/custom_textbox"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/corTexto"
+                    android:textColorLink="#2196F3"
+                    app:layout_constraintEnd_toEndOf="@+id/txtPacienteRg"
+                    app:layout_constraintStart_toStartOf="@+id/textView9"
+                    app:layout_constraintTop_toBottomOf="@+id/textView9"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Gênero"
+                    app:layout_constraintStart_toStartOf="@+id/txtPacienteNascimento"
+                    app:layout_constraintTop_toBottomOf="@+id/txtPacienteNascimento" />
+
+                <EditText
+                    android:id="@+id/txtPacienteRg"
+                    android:layout_width="0dp"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/custom_textbox"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/corTexto"
+                    android:textColorLink="#2196F3"
+                    app:layout_constraintEnd_toEndOf="@+id/txtPacienteCpf"
+                    app:layout_constraintStart_toStartOf="@+id/textView8"
+                    app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+                <EditText
+                    android:id="@+id/txtPacienteNascimento"
+                    style="@style/TextBox"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:inputType="date"
+                    app:layout_constraintEnd_toEndOf="@+id/txtPacienteTelefone"
+                    app:layout_constraintStart_toStartOf="@+id/textView14"
+                    app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="E-mail"
+                    android:textColor="@color/colorLabel"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/txtPacienteRg"
+                    app:layout_constraintTop_toBottomOf="@+id/txtPacienteRg" />
+
+                <EditText
+                    android:id="@+id/txtPacienteCep"
+                    style="@style/TextBox"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="@+id/txtPacienteGenero"
+                    app:layout_constraintStart_toStartOf="@+id/textView16"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Nascimento"
+                    app:layout_constraintStart_toStartOf="@+id/txtPacienteTelefone"
+                    app:layout_constraintTop_toBottomOf="@+id/txtPacienteTelefone" />
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
