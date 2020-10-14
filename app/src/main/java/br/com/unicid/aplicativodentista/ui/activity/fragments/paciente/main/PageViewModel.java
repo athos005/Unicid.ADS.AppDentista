@@ -1,4 +1,4 @@
-package br.com.unicid.aplicativodentista.ui.main;
+package br.com.unicid.aplicativodentista.ui.activity.fragments.paciente.main;
 
 import android.arch.core.util.Function;
 import android.arch.lifecycle.LiveData;

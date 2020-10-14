@@ -1,4 +1,4 @@
-package br.com.unicid.aplicativodentista.ui.activity;
+package br.com.unicid.aplicativodentista.ui.activity.fragments.paciente;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;

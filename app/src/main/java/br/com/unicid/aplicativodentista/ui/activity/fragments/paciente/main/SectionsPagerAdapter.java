@@ -1,4 +1,4 @@
-package br.com.unicid.aplicativodentista.ui.main;
+package br.com.unicid.aplicativodentista.ui.activity.fragments.paciente.main;
 
 import android.content.Context;
 import android.support.annotation.Nullable;
@@ -7,8 +7,11 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import br.com.unicid.aplicativodentista.ui.activity.PacienteDadosFragment;
+import br.com.unicid.aplicativodentista.ui.activity.fragments.paciente.PacienteAnamneseFragment;
+import br.com.unicid.aplicativodentista.ui.activity.fragments.paciente.PacienteConsultasFragment;
+import br.com.unicid.aplicativodentista.ui.activity.fragments.paciente.PacienteDadosFragment;
 import br.com.unicid.aplicativodentista.R;
+import br.com.unicid.aplicativodentista.ui.activity.fragments.paciente.PacienteTratamentosFragment;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
@@ -17,7 +20,7 @@ import br.com.unicid.aplicativodentista.R;
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @StringRes
-    private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2};
+    private static final int[] TAB_TITLES = new int[]{R.string.tabPaciente_text_1, R.string.tabPaciente_text_2, R.string.tabPaciente_text_3, R.string.tabPaciente_text_4};
     private final Context mContext;
 
     public SectionsPagerAdapter(Context context, FragmentManager fm) {
@@ -32,6 +35,15 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
             case 0:
                 fragment = new PacienteDadosFragment();
                 break;
+            case 1:
+                fragment = new PacienteAnamneseFragment();
+                break;
+            case 2:
+                fragment = new PacienteTratamentosFragment();
+                break;
+            case 3:
+                fragment = new PacienteConsultasFragment();
+                break;
         }
         return fragment;
     }
@@ -45,6 +57,6 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     @Override
     public int getCount() {
         // Show 2 total pages.
-        return 1;
+        return 4;
     }
 }
