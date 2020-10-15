@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_gravity="center"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -24,39 +23,31 @@
         style="@style/Label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:text="Tem ou teve"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/cardAsma"
         app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
+    <!--ASMA-->
     <android.support.v7.widget.CardView
         android:id="@+id/cardAsma"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        app:cardCornerRadius="4dp"
-        app:cardElevation="0dp"
+        style="@style/Card"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView21">
 
         <android.support.constraint.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:clickable="false"
-        android:elevation="0dp">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:elevation="0dp">
 
             <TextView
                 android:id="@+id/textView26"
                 android:layout_width="128dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:gravity="center"
                 android:text="Asma"
-                android:textAlignment="textStart"
                 android:textColor="@color/corPrincipal"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/radioGroup2"
@@ -67,8 +58,7 @@
                 android:id="@+id/radioGroup2"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
+                android:layout_margin="16dp"
                 android:checkedButton="@id/rdbAsmaNao"
                 android:orientation="horizontal"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -77,7 +67,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <RadioButton
-                    android:id="@+id/rdbAsmaSIm"
+                    android:id="@+id/rdbAsmaSim"
                     style="@style/RadioButton.sim"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
@@ -89,21 +79,14 @@
                     android:layout_height="wrap_content" />
             </RadioGroup>
 
-    </android.support.constraint.ConstraintLayout>
-
+        </android.support.constraint.ConstraintLayout>
 
     </android.support.v7.widget.CardView>
 
-
+    <!--HIPERTENSÃO-->
     <android.support.v7.widget.CardView
         android:id="@+id/cardHipertensao"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        app:cardCornerRadius="4dp"
-        app:cardElevation="0dp"
+        style="@style/Card"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardAsma">
@@ -119,22 +102,19 @@
                 android:layout_width="128dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:gravity="center"
                 android:text="Hipertensão"
-                android:textAlignment="textStart"
                 android:textColor="@color/corPrincipal"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/radioGroup"
+                app:layout_constraintEnd_toStartOf="@+id/radioGroup3"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <RadioGroup
-                android:id="@+id/radioGroup"
+                android:id="@+id/radioGroup3"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:checkedButton="@id/rdbAsmaNao"
+                android:layout_margin="16dp"
+                android:checkedButton="@id/rdbHipertensaoNao"
                 android:orientation="horizontal"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -156,8 +136,117 @@
 
         </android.support.constraint.ConstraintLayout>
 
+    </android.support.v7.widget.CardView>
+
+    <!--HIPOTENSÃO-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardHipotensao"
+        style="@style/Card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardHipertensao">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:elevation="0dp">
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Hipotensão"
+                android:textColor="@color/corPrincipal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/radioGroup4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="16dp"
+                android:checkedButton="@id/rdbHipotensaoNao"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView28"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RadioButton
+                    android:id="@+id/rdbHipotensaoSim"
+                    style="@style/RadioButton.sim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/rdbHipotensaoNao"
+                    style="@style/RadioButton.nao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+        </android.support.constraint.ConstraintLayout>
 
     </android.support.v7.widget.CardView>
 
+
+    <!--DIABETES-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardDiabetes"
+        style="@style/Card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardHipotensao">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:elevation="0dp">
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Diabetes"
+                android:textColor="@color/corPrincipal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/radiogroup5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup5"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="16dp"
+                android:checkedButton="@id/rdbDiabetesNao"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView29"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RadioButton
+                    android:id="@+id/rdbDiabetesSim"
+                    style="@style/RadioButton.sim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/rdbDiabetesNao"
+                    style="@style/RadioButton.nao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
 
 </android.support.constraint.ConstraintLayout>

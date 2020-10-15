@@ -46,7 +46,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CalendarioAgenda"
         app:layout_constraintVertical_bias="0.0"
-        tools:listitem="@layout/info_consulta_marcada">
+        tools:listitem="@layout/activity_info_consulta_marcada">
 
     </ListView>
 
