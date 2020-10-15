@@ -43,18 +43,21 @@
         <item name="textAllCaps">false</item>
     </style>
 
-
     <style name="RadioButton">
         <item name="android:gravity">center</item>
         <item name="android:layout_gravity">center</item>
-        <item name="android:buttonTint"></item>
+        <item name="android:buttonTint">@color/corPrincipal</item>
+        <item name="android:textColor">@color/corPrincipal</item>
+        <item name="android:layout_weight">0.5</item>
     </style>
 
-    android:layout_gravity="center"
-    android:layout_weight="0.5"
-    android:buttonTint="@color/corPrincipal"
-    android:gravity="center"
-    android:text="@string/sim"
-    android:textColor="@color/corPrincipal"
+    <style name="RadioButton.sim" parent="RadioButton">
+        <item name="android:text">Sim</item>
+    </style>
+
+    <style name="RadioButton.nao" parent="RadioButton">
+        <item name="android:text">Não</item>
+    </style>
+
 
 </resources>
