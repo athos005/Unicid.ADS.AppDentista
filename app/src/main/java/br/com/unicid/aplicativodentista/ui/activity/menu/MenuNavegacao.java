@@ -11,12 +11,11 @@
 //
 //    private BottomNavigationView navigationView;
 //
-//    @SuppressLint("ResourceType")
 //    @Override
 //    protected void onCreate(Bundle savedInstanceState) {
 //        super.onCreate(savedInstanceState);
 //        setContentView(R.menu.menu_navegacao);
 //
-//        navigationView = (BottomNavigationView) findViewById(R
+//        navigationView = (BottomNavigationView) findViewById(R.id.menu_navegacao_activity);
 //    }
 //}

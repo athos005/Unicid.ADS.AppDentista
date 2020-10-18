@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+
+        <!-- LISTA USUARIO -->
+         <activity android:name=".ui.activity.MainActivity">
+         <intent-filter>
+         <action android:name="android.intent.action.MAIN" />
+         <category android:name="android.intent.category.LAUNCHER" />
+         </intent-filter>
+         </activity>
+
 <!--        <activity-->
 <!--            android:name=".ui.activity.PacienteActivity"-->
 <!--            android:label="@string/title_activity_paciente"-->
@@ -52,21 +61,21 @@
         <!-- </intent-filter> -->
         <!-- </activity> -->
 
-        <!-- AGENDA -->
-         <activity android:name=".ui.activity.AgendaActivity">
-         <intent-filter>
-         <action android:name="android.intent.action.MAIN" />
-         <category android:name="android.intent.category.LAUNCHER" />
-         </intent-filter>
-         </activity>
+<!--        &lt;!&ndash; AGENDA &ndash;&gt;-->
+<!--         <activity android:name=".ui.activity.AgendaActivity">-->
+<!--         <intent-filter>-->
+<!--         <action android:name="android.intent.action.MAIN" />-->
+<!--         <category android:name="android.intent.category.LAUNCHER" />-->
+<!--         </intent-filter>-->
+<!--         </activity>-->
 
-         AGENDAMENTO
-         <activity android:name=".ui.activity.AgendamentoActivity">
-<!--         <intent-filter> -->
-<!--         <action android:name="android.intent.action.MAIN" /> -->
-<!--         <category android:name="android.intent.category.LAUNCHER" /> -->
-<!--         </intent-filter> -->
-         </activity>
+<!--&lt;!&ndash;         AGENDAMENTO&ndash;&gt;-->
+<!--         <activity android:name=".ui.activity.AgendamentoActivity">-->
+<!--&lt;!&ndash;         <intent-filter> &ndash;&gt;-->
+<!--&lt;!&ndash;         <action android:name="android.intent.action.MAIN" /> &ndash;&gt;-->
+<!--&lt;!&ndash;         <category android:name="android.intent.category.LAUNCHER" /> &ndash;&gt;-->
+<!--&lt;!&ndash;         </intent-filter> &ndash;&gt;-->
+<!--         </activity>-->
 
         <meta-data
             android:name="preloaded_fonts"
