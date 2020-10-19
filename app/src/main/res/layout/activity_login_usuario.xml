@@ -11,13 +11,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/roboto_bold"
         android:text="Olá\nDoutor"
         android:textColor="#147DC7"
         android:textSize="64sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/imageView"
+        app:layout_constraintHorizontal_bias="0.0"/>
 
     <ImageView
         android:id="@+id/imageView"
@@ -36,7 +39,6 @@
         android:id="@+id/txtLoginUsuarioSenha"
         android:layout_width="0dp"
         android:layout_height="38dp"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/custom_textbox"
@@ -48,10 +50,11 @@
         android:textColor="#FFFFFF"
         android:textColorHighlight="@color/corPrincipal"
         android:textColorLink="#2196F3"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView5"
@@ -83,7 +86,6 @@
         android:id="@+id/txtLoginUsuarioEmail"
         android:layout_width="0dp"
         android:layout_height="38dp"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/custom_textbox"
@@ -95,22 +97,22 @@
         android:textColor="#FFFFFF"
         android:textColorHighlight="@color/corPrincipal"
         android:textColorLink="#2196F3"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:fontFamily="@font/roboto_medium"
         android:text="E-mail"
         android:textColor="#74C2F9"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
@@ -118,7 +120,7 @@
         android:layout_width="0dp"
         android:layout_height="64sp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/custom_button"
         android:fontFamily="@font/roboto_bold"
@@ -126,23 +128,11 @@
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtLoginUsuarioSenha" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:fontFamily="@font/roboto"
-        android:text="Esqueceu a senha?"
-        android:textColor="#74C2F9"
-        android:textColorLink="#74C2F9"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtLoginUsuarioSenha" />
+        app:layout_constraintTop_toBottomOf="@+id/txtLoginUsuarioSenha"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/btnLoginNovoUsuario"
@@ -154,8 +144,10 @@
         android:text="Criar nova conta"
         android:textColor="#147DC7"
         android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLoginAcessar" />
+        app:layout_constraintTop_toBottomOf="@+id/btnLoginAcessar"
+        app:layout_constraintVertical_bias="0.0" />
 
 </android.support.constraint.ConstraintLayout>

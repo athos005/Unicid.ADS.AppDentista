@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        openFragment();
         switch (item.getItemId()) {
             case R.id.menu_pacientes: {
                 break;
