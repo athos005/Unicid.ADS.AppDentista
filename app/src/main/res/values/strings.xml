@@ -11,4 +11,17 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="action_settings">toolbarTitle</string>
     <string name="title_activity_pacientes">PacientesActivity</string>
+    <string name="menu_tititulo_configuracoes">Configurações</string>
+    <string name="menu_titutlo_agenda">Agenda</string>
+    <string name="menu_titulo_pacientes">Pacientes</string>
+    <string name="texto_caixa_pesquisa">Pesquisar paciente</string>
+    <string name="title_activity_paciente">PacienteActivity</string>
+
+    <string name="tabPaciente_text_1">Dados</string>
+    <string name="tabPaciente_text_2">Anamnese</string>
+    <string name="tabPaciente_text_3">Tratamentos</string>
+    <string name="tabPaciente_text_4">Consultas</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sim">Sim</string>
 </resources>
