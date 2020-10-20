@@ -5,64 +5,66 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
-import android.view.LayoutInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
 
 import br.com.unicid.aplicativodentista.R;
 
-public class AgendaActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
+public class AgendaActivity extends AppCompatActivity {
 
-
-//    @Override
-//    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-//                             Bundle savedInstanceState) {
-//        return inflater.inflate(R.layout.activity_agenda, container, false);
-//    }
-//
-//    public static AgendaActivity newInstance() {
-//        return new AgendaActivity();
-//    }
-
-    private BottomNavigationView navigationView;
+    private BottomNavigationView menuNavegacaoAgenda;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agenda);
 
-        navigationView = (BottomNavigationView) findViewById(R.id.navigationView);
-        navigationView.setOnNavigationItemSelectedListener(this);
-
-        setTitle("Agenda");
-
-        FloatingActionButton btnAgendarNovaConsulta = findViewById(R.id.btnAgendarNovaConsulta);
-        btnAgendarNovaConsulta.setOnClickListener(new View.OnClickListener() {
-
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.menuNavegacaoAgenda);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(AgendaActivity.this,
-                        AgendamentoActivity.class);
-                startActivity(intent);
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                Intent intent;
+                switch (item.getItemId()) {
+                    case R.id.menu_pacientes:
+                        intent = new Intent(AgendaActivity.this,
+                                ListaPacientes.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.menu_agenda:
+                        intent = new Intent(AgendaActivity.this,
+                                AgendaActivity.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.menu_configuracoes:
+
+                        break;
+                }
+                return true;
             }
         });
-    }
 
-    private void openFragment(Fragment fragment) {
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.container, fragment);
-        transaction.addToBackStack(null);
-        transaction.commit();
-    }
+        bottomNavigationView.setOnNavigationItemReselectedListener(new BottomNavigationView.OnNavigationItemReselectedListener() {
+            @Override
+            public void onNavigationItemReselected(@NonNull MenuItem item) {
 
-    @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-        return false;
+                Intent intent;
+                switch (item.getItemId()) {
+                    case R.id.menu_pacientes:
+                        intent = new Intent(AgendaActivity.this,
+                                ListaPacientes.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.menu_agenda:
+                        intent = new Intent(AgendaActivity.this,
+                                AgendaActivity.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.menu_configuracoes:
+
+                        break;
+                }
+            }
+        });
     }
 }

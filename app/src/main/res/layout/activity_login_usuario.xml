@@ -116,7 +116,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
-        android:id="@+id/btnLoginAcessar"
+        android:id="@+id/btnAcessarApp"
         android:layout_width="0dp"
         android:layout_height="64sp"
         android:layout_marginStart="16dp"
@@ -147,7 +147,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLoginAcessar"
+        app:layout_constraintTop_toBottomOf="@+id/btnAcessarApp"
         app:layout_constraintVertical_bias="0.0" />
 
 </android.support.constraint.ConstraintLayout>
