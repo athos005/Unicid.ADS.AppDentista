@@ -20,6 +20,7 @@ public class AgendaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_agenda);
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.menuNavegacaoAgenda);
+       // menuNavegacaoAgenda.setSelectedItemId(R.id.menu_agenda);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
