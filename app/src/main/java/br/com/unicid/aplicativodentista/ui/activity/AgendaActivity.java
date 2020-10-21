@@ -19,8 +19,11 @@ public class AgendaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agenda);
 
+        menuNavegacao();
+    }
+
+    private void menuNavegacao(){
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.menuNavegacaoAgenda);
-       // menuNavegacaoAgenda.setSelectedItemId(R.id.menu_agenda);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -37,34 +40,8 @@ public class AgendaActivity extends AppCompatActivity {
                                 AgendaActivity.class);
                         startActivity(intent);
                         break;
-                    case R.id.menu_configuracoes:
-
-                        break;
                 }
                 return true;
-            }
-        });
-
-        bottomNavigationView.setOnNavigationItemReselectedListener(new BottomNavigationView.OnNavigationItemReselectedListener() {
-            @Override
-            public void onNavigationItemReselected(@NonNull MenuItem item) {
-
-                Intent intent;
-                switch (item.getItemId()) {
-                    case R.id.menu_pacientes:
-                        intent = new Intent(AgendaActivity.this,
-                                ListaPacientes.class);
-                        startActivity(intent);
-                        break;
-                    case R.id.menu_agenda:
-                        intent = new Intent(AgendaActivity.this,
-                                AgendaActivity.class);
-                        startActivity(intent);
-                        break;
-                    case R.id.menu_configuracoes:
-
-                        break;
-                }
             }
         });
     }
