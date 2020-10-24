@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     package="br.com.unicid.aplicativodentista">
 
     <application
@@ -10,29 +9,40 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.activity.DadosPaciente"></activity>
-        <!-- LOGIN USUARIO -->
-        <activity android:name=".ui.activity.LoginUsuarioAcitivity">
+
+        <!--LOGIN USUARIO -->
+        <activity
+            android:name=".ui.activity.LoginUsuarioActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity> <!-- NOVO USUARIO -->
-        <activity android:name=".ui.activity.NovoUsuarioAcitivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity> <!-- AGENDA -->
-        <activity android:name=".ui.activity.AgendaActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+                <activity
+                    android:name=".ui.activity.PacienteActivity"
+                    android:label="@string/title_activity_paciente"
+                    android:theme="@style/AppTheme.NoActionBar">
+                </activity>
+
+<!--         LISTA PACIENTE -->
+         <activity android:name=".ui.activity.ListaPacientes"/>
+
+        <!-- NOVO USUARIO -->
+        <activity android:name=".ui.activity.CadastroUsuarioActivity" />
+
+        <!-- NOVO PACIENTE -->
+        <!--<activity android:name=".ui.activity.DadosPacienteActivity"/> -->
+
+
+        <!-- AGENDA -->
+        <activity android:name=".ui.activity.AgendaActivity"
+            android:label="Agenda"/>
+
+        <!--AGENDAMENTO-->
+        <activity android:name=".ui.activity.AgendamentoActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

@@ -2,15 +2,90 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">#005592</item>
+        <item name="colorPrimary">#147DC7</item>
         <item name="colorPrimaryDark">#013255</item>
-        <item name="colorAccent">#147DC7</item>
+        <item name="colorAccent">#48A4E4</item>
     </style>
+
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ClickText">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">@color/corPrincipal</item>
+    </style>
+
+    <style name="Label">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorLabel</item>
+    </style>
+
+    <style name="TextBox">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/corTexto</item>
+        <item name="android:background">@drawable/custom_textbox</item>
+        <item name="android:layout_height">38dp</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:background">@drawable/custom_button</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="SelectionControls">
+        <item name="android:buttonTint">@color/corPrincipal</item>
+        <item name="android:textColor">@color/corPrincipal</item>
+    </style>
+
+    <style name="RadioButton" parent="SelectionControls">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">0.5</item>
+    </style>
+
+    <style name="RadioButton.sim" parent="RadioButton">
+        <item name="android:text">Sim</item>
+    </style>
+
+    <style name="RadioButton.nao" parent="RadioButton">
+        <item name="android:text">Não</item>
+    </style>
+
+    <style name="Card">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="cardCornerRadius">4dp</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="CheckBox" parent="SelectionControls">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:textColor">@color/corPrincipal</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="bottomNavigation">
+        <item name="android:background">@color/corPrincipal</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="itemIconSize">32dp</item>
+        <item name="labelVisibilityMode">unlabeled</item>
+        <item name="itemIconTint">@color/colorLabel</item>
+        <item name="android:state_pressed">true</item>
+        <item name="android:color">#ffffff</item>
+
+    </style>
 
 </resources>
