@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activity.UsuarioAcitivity">
+    tools:context=".ui.activity.CadastroUsuarioActivity">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -15,8 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -25,7 +24,7 @@
         android:background="@color/corBackgroung"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -36,9 +35,9 @@
     <Button
         android:id="@+id/btnCadastrarUsuario"
         android:layout_width="0dp"
-        android:layout_height="64sp"
+        android:layout_height="32sp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/custom_button"
         android:fontFamily="@font/roboto_bold"
@@ -47,13 +46,14 @@
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtUsuarioConfirmaSenha" />
 
     <EditText
         android:id="@+id/txtUsuarioNome"
         android:layout_width="0dp"
-        android:layout_height="38dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/custom_textbox"
@@ -83,7 +83,7 @@
     <EditText
         android:id="@+id/txtUsuarioCpf"
         android:layout_width="0dp"
-        android:layout_height="38dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/custom_textbox"
         android:ems="10"
         android:inputType="text"
@@ -111,7 +111,7 @@
     <EditText
         android:id="@+id/txtUsuarioCro"
         android:layout_width="0dp"
-        android:layout_height="38dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:background="@drawable/custom_textbox"
         android:ems="10"
@@ -127,7 +127,7 @@
     <EditText
         android:id="@+id/txtUsuarioEmail"
         android:layout_width="0dp"
-        android:layout_height="38dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:background="@drawable/custom_textbox"
         android:ems="10"
@@ -156,7 +156,7 @@
     <EditText
         android:id="@+id/txtUsuarioSenha"
         android:layout_width="0dp"
-        android:layout_height="38dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/custom_textbox"
@@ -186,7 +186,7 @@
     <EditText
         android:id="@+id/txtUsuarioConfirmaSenha"
         android:layout_width="0dp"
-        android:layout_height="38dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/custom_textbox"

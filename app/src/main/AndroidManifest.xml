@@ -27,11 +27,11 @@
                     android:theme="@style/AppTheme.NoActionBar">
                 </activity>
 
-<!--         LISTA USUARIO -->
+<!--         LISTA PACIENTE -->
          <activity android:name=".ui.activity.ListaPacientes"/>
 
         <!-- NOVO USUARIO -->
-        <activity android:name=".ui.activity.UsuarioActivity" />
+        <activity android:name=".ui.activity.CadastroUsuarioActivity" />
 
         <!-- NOVO PACIENTE -->
         <!--<activity android:name=".ui.activity.DadosPacienteActivity"/> -->
